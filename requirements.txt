@@ -119,4 +119,3 @@ wcwidth==0.2.5
 websockets==10.3
 Werkzeug==2.2.2
 wrapt==1.14.1
-wsproto==1.2.0
