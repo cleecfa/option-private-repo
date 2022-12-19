@@ -6,3 +6,4 @@ streamlit==1.16.0
 plotly==5.11.0
 plotly-express==0.4.1
 scikit-learn==1.2.0
+backports.zoneinfo;python_version<"3.9
