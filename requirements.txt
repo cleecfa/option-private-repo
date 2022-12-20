@@ -1,9 +1,0 @@
-tda-api==1.6.0
-numpy==1.23.2
-python-dotenv==0.21.0
-pandas==1.4.4
-streamlit==1.16.0
-plotly==5.11.0
-plotly-express==0.4.1
-scikit-learn==1.2.0
-backports.zoneinfo;python_version<"3.9
