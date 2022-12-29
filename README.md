@@ -6,7 +6,7 @@
 **Heroku Deployment Process**
 
 TD Authentication Process
-- I downloaded a Chrome driver (Same version as your Chrome browser) in the same file location.
+- You need a Chrome driver (same version as your Chrome browser) in the same file location.
 - If first time authenticating, you need to provide a dummy token json file name as part of the token_path. 
 - When you run the script for the first time, it will pop out a chrome window for logging into the TD (client side, not the developer side)![image](https://user-images.githubusercontent.com/82781419/208785275-4956445d-a765-40c1-8343-374f23229aeb.png)
 
