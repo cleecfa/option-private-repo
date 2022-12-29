@@ -1,10 +1,10 @@
-*Credit for tda-api package*
+* Credit for tda-api package
 - Credit to alexgolec/tda-api for the TD API package
 - https://github.com/alexgolec/tda-api
 - https://tda-api.readthedocs.io/en/v1.3.0/index.html![image](https://user-images.githubusercontent.com/82781419/208785245-00291777-f347-4981-8e5d-08fb38eaf44d.png)
 
 
-*Heroku Deployment Process*
+* Heroku Deployment Process
 
 TD Authentication Process
 - You need a Chrome driver (same version as your Chrome browser) in the same file location.
