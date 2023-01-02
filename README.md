@@ -30,9 +30,9 @@ In my net gamma exposure analysis, I assume that MMs are on negative gamma for p
 
 ## Heroku Deployment Process
 ### Heroku Deployment Item #1 - Hide credentials in the environment variables (aka config variables)
-- For non-heroku deployment --> use load_dotenv()
-- For heroku --> load_dotenv() #Create environment variable --> for some reason heroku doesn't allow dotenv library
-    Config Variables in Heroku
+- If you are not using heroku for deployment, you can use load_dotenv() to hide your credentials.
+- Heroku doesn't allow dotenv for some reason. Thankfully, they proide native config variables.
+-- Config Variables in Heroku
         - Created config variables --> Heroku --> App --> Settings --> Config Variables
     To access config variables in Python app file
         - os.environ.get([key for the variable])
