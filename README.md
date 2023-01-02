@@ -19,14 +19,14 @@ In my net gamma exposure analysis, I assume that MMs are on negative gamma for p
 # Tool Development
 
 ## Credit for tda-api package
-*Credit to alexgolec/tda-api for the TD API package
-*https://github.com/alexgolec/tda-api
+- Credit to alexgolec/tda-api for the TD API package
+- https://github.com/alexgolec/tda-api
 - https://tda-api.readthedocs.io/en/v1.3.0/index.html![image](https://user-images.githubusercontent.com/82781419/208785245-00291777-f347-4981-8e5d-08fb38eaf44d.png)
 
 ## TD Authentication Process
 - You need a Chrome driver (same version as your Chrome browser) in the same file location.
 - If first time authenticating, you need to provide a dummy token json file name as part of the token_path. 
-- When you run the script for the first time, it will pop out a chrome window for logging into the TD (client side, not the developer side)![image](https://user-images.githubusercontent.com/82781419/208785275-4956445d-a765-40c1-8343-374f23229aeb.png)
+- When you run the script for the first time, it will pop out a chrome window for logging into the TD (client side, not the developer side)
 
 ## Heroku Deployment Process
 ### Heroku Deployment Item #1 - Hide credentials in the environment variables (aka config variables)
