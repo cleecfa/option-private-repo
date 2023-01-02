@@ -11,26 +11,25 @@ Regardless of luck or skills, those stocks exploded. That means those out-of-mon
 
 So yes, options could also impact the price of underlying assets. 
  
-## JPM 
+## JPMorgan Hedged Equity Fund 
 I also encourage you to learn JPMorgan Hedged Equity Fund's (JHEQX) Impact On S&P500 (https://tdameritradenetwork.com/video/jpmorgan-hedged-equity-fund-s-jheqx-impact-on-volatility-s-p-500) as it explains the impact of some of the mega funds' options trade activities to the market very well. In the example of the JPM fund, they take short call and long put positions which means market makers are on long call (positive gamma) and short put (negative gamma).
 In my net gamma exposure analysis, I assume that MMs are on negative gamma for puts and positive gamma for calls (Note: This assumption may be only valid for index ETFs such as SPY and may not work for individual stocks). When an option is in net negative gamma territory, MMs' trend-following stance can cause some extra volatility to the market. Trend following is where more assets are bought when the asset price goes up, and sold more when the asset price goes down. I believe MMs' net gamma was far negative during December 2022 which generated even more equity selling in the midst of the overall market downturn. 
 
-# Credit for tda-api package
-- Credit to alexgolec/tda-api for the TD API package
-- https://github.com/alexgolec/tda-api
+
+# Tool Development
+
+## Credit for tda-api package
+*Credit to alexgolec/tda-api for the TD API package
+*https://github.com/alexgolec/tda-api
 - https://tda-api.readthedocs.io/en/v1.3.0/index.html![image](https://user-images.githubusercontent.com/82781419/208785245-00291777-f347-4981-8e5d-08fb38eaf44d.png)
 
-# App.py
-
-# Heroku Deployment Process
-
-TD Authentication Process
+## TD Authentication Process
 - You need a Chrome driver (same version as your Chrome browser) in the same file location.
 - If first time authenticating, you need to provide a dummy token json file name as part of the token_path. 
 - When you run the script for the first time, it will pop out a chrome window for logging into the TD (client side, not the developer side)![image](https://user-images.githubusercontent.com/82781419/208785275-4956445d-a765-40c1-8343-374f23229aeb.png)
 
-
-Heroku Deployment Item #1 - Hide credentials in the environment variables (aka config variables)
+## Heroku Deployment Process
+### Heroku Deployment Item #1 - Hide credentials in the environment variables (aka config variables)
 - For non-heroku deployment --> use load_dotenv()
 - For heroku --> load_dotenv() #Create environment variable --> for some reason heroku doesn't allow dotenv library
     Config Variables in Heroku
