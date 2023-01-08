@@ -30,6 +30,12 @@ In my net gamma exposure analysis, I assume that MMs are on negative gamma for p
 ## Quick view of required files
 [![files-needed-for-deployment.jpg](https://i.postimg.cc/Xq50VwsD/files-needed-for-deployment.jpg)](https://postimg.cc/vxGKh6FW)
 
+## How to run a streamlit app on your local machine
+- Use the following command in command line
+```
+run streamlit [py file name].py
+```
+
 ## Credit for tda-api package
 - Credit to alexgolec/tda-api for the TD API package
 - https://github.com/alexgolec/tda-api
@@ -97,6 +103,7 @@ base = 'dark'" >> ~/.streamlit/config.toml
 ```
 ### Heroku Deployment Item #6 - Create requirements.txt   
 - Use pip freeze to create a text file for a list of all Python packages.
+- Use the following command in command line
 ```
 pip freeze >requirements.txt
 ```
