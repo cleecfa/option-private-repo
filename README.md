@@ -34,7 +34,7 @@ In my net gamma exposure analysis, I assume that MMs are on negative gamma for p
 - Note: Heroku doesn't allow dotenv() for some reason. Thankfully, Heroku proide native config variables.
 -- Config Variables in Heroku
         - Created config variables --> Heroku --> App --> Settings --> Config Variables
-    https://github.com/cleecfa/heroku-option-app-v1/blob/6a471b61d7154e01a077ae63f50aee8a5e402c54/images/where%20to%20store%20heroku%20config%20variables.jpg
+    [![where-to-store-heroku-config-variables.jpg](https://i.postimg.cc/mgHjrPwF/where-to-store-heroku-config-variables.jpg)](https://postimg.cc/dhJrHtgq)
     To access config variables in Python app file
         - os.environ.get([key for the variable])
     Where in the deployment process to generate a tda-api token refresher json file
