@@ -86,7 +86,7 @@ except FileNotFoundError:
 ```web: sh setup.sh && streamlit run --server.port $PORT app.py```
 
 ### Heroku Deployment Item #5 - Set up setup.sh   
-- Added the following to default the dark theme 
+- Add below to the setup.sh which will make the dark theme as default 
 ```mkdir -p ~/.streamlit/
 echo "[server]"  > ~/.streamlit/config.toml
 echo "headless = true"  >> ~/.streamlit/config.toml
@@ -97,7 +97,6 @@ base = 'dark'" >> ~/.streamlit/config.toml
 ```
 ### Heroku Deployment Item #6 - Create requirements.txt   
 - Use pip freeze to create a text file for a list of all Python packages.
-- In the terminal, type below:
 ```
 pip freeze >requirements.txt
 ```
