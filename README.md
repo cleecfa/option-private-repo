@@ -35,18 +35,19 @@ In my net gamma exposure analysis, I assume that MMs are on negative gamma for p
 -- Config Variables in Heroku
         - Created config variables --> Heroku --> App --> Settings --> Config Variables
     [![where-to-store-heroku-config-variables.jpg](https://i.postimg.cc/mgHjrPwF/where-to-store-heroku-config-variables.jpg)](https://postimg.cc/dhJrHtgq)
-    To access config variables in Python app file
+    To access config variables in Python app file:
         - os.environ.get([key for the variable])
-    Where in the deployment process to generate a tda-api token refresher json file
-        - ./td_token.json![image](https://user-images.githubusercontent.com/82781419/208785307-97e677f2-86fa-408f-bedb-13c4f696f09f.png)
+    Need a tda-api token refresher json file as one of the cofig variables
+        - Key = token_path
+        - value = ./td_token.json
 
 
-Heroku Deployment Item #2 - Deploying Selenium webdriver in Heroku
-- Need to add Chrome build packs as Config Vars
+### Heroku Deployment Item #2 - Deploying Selenium webdriver in Heroku
+- Need to add the latest Chrome build packs as Config Vars
 - CHROMEDRIVER_PATH = /app/.chromedriver/bin/chromedriver
 - GOOGLE_CHROME_BIN = /app/.apt/usr/bin/google-chrome
-- Need to build a custom webdriver for the deployment to work
-- Reference: https://www.andressevilla.com/running-chromedriver-with-python-selenium-on-heroku/![image](https://user-images.githubusercontent.com/82781419/208785322-04c620c3-4f36-4cb9-b533-321aa8e11837.png)
+- Need to build a custom webdriver for proper deployment
+- Reference: https://user-images.githubusercontent.com/82781419/208785322-04c620c3-4f36-4cb9-b533-321aa8e11837.png
 
 
 Callback URL Set up for TD Developers 
