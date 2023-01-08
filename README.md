@@ -4,7 +4,7 @@ https://option-app-v1.herokuapp.com/
 # Description
 This is a real-time web application that pulls options quotes, greeks, and underlying asset info based on user parameters (i.e. ticker, expiration dates, type of market activity such as volume or open interest) and analyzes the options market from a data-driven perspective. The app populates three major analyses: 1) market maker (MM)'s expected gamma exposure, 2) market delta, 3) theoretical price vs. actual premium. The app has been built with Streamlit and deployed on the Heroku server.
 
-# Main features of the App
+# Main Features of the App
 - The app runs on real-time options and underlying asset pricing data.
 - The app automatically refreshes every minute.
 - the app runs on various user parameters.
