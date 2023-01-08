@@ -1,3 +1,6 @@
+# Application url
+https://option-app-v1.herokuapp.com/
+
 # Description
 This is a real-time web application that pulls options quotes, greeks and underluing asset info all based on user parameters (i.e. ticker, expirations dates, type of market activities such as volume or open interest) and analyze the options market from a data-driven persepctive. The app populates three different major analysis - 1) market maker(MM)'s expected gamma exposure, 2) market delta, 3) theoretical price vs. actual premium. The app has been built with Steramlit and deployed on Heroku server. 
 
