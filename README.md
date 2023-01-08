@@ -65,6 +65,7 @@ except FileNotFoundError:
 ```
 
 
-Callback URL Set up for TD Developers 
-- Set it to "https://<your heroku app name>.herokuapp.com/auth"![image](https://user-images.githubusercontent.com/82781419/208785350-990fe49b-45c6-4b5e-807e-e5bc3c5145ac.png)
+### Heroku Deployment Item #3 - Callback URL Set up for TD Developers 
+- Navigate to TD Developers, then your app.
+- I set the callback url to: 	https://option-app-v1.herokuapp.com/
 
