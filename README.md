@@ -18,6 +18,9 @@ In my net gamma exposure analysis, I assume that MMs are on negative gamma for p
 
 # App Development Process
 
+## Quick view of required files
+[![files-needed-for-deployment.jpg](https://i.postimg.cc/Xq50VwsD/files-needed-for-deployment.jpg)](https://postimg.cc/vxGKh6FW)
+
 ## Credit for tda-api package
 - Credit to alexgolec/tda-api for the TD API package
 - https://github.com/alexgolec/tda-api
@@ -68,4 +71,18 @@ except FileNotFoundError:
 ### Heroku Deployment Item #3 - Callback URL Set up for TD Developers 
 - Navigate to TD Developers, then your app.
 - I set the callback url to: 	https://option-app-v1.herokuapp.com/
+
+### Heroku Deployment Item #4 - Set up Procfile  
+- Added the following configuration string to the Procfile 
+```web: sh setup.sh && streamlit run --server.port $PORT app.py```
+
+### Heroku Deployment Item #5 - Set up setup.sh   
+- Added the following to default the dark theme 
+```mkdir -p ~/.streamlit/
+echo "[server]"  > ~/.streamlit/config.toml
+echo "headless = true"  >> ~/.streamlit/config.toml
+echo "port = $PORT"  >> ~/.streamlit/config.toml
+echo "enableCORS = false"  >> ~/.streamlit/config.toml
+echo "[theme]
+base = 'dark'" >> ~/.streamlit/config.toml```
 
