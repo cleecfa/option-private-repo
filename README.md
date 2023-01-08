@@ -16,7 +16,7 @@ I also encourage you to learn JPMorgan Hedged Equity Fund's (JHEQX) Impact On S&
 In my net gamma exposure analysis, I assume that MMs are on negative gamma for puts and positive gamma for calls (Note: This assumption may be only valid for index ETFs such as SPY and may not work for individual stocks). When an option is in net negative gamma territory, MMs' trend-following stance can cause some extra volatility to the market. Trend following is where more assets are bought when the asset price goes up, and sold more when the asset price goes down. I believe MMs' net gamma was far negative during December 2022 which generated even more equity selling in the midst of the overall market downturn. 
 
 
-# Tool Development
+# App Development Process
 
 ## Credit for tda-api package
 - Credit to alexgolec/tda-api for the TD API package
@@ -26,12 +26,12 @@ In my net gamma exposure analysis, I assume that MMs are on negative gamma for p
 ## TD Authentication Process
 - You need a Chrome driver (same version as your Chrome browser) in the same file location.
 - If first time authenticating, you need to provide a dummy token json file name as part of the token_path. 
-- When you run the script for the first time, it will pop out a chrome window for logging into the TD (client side, not the developer side)
+- When you run through the authentication process for the first time, it will pop out a chrome window for logging into the TD (client side, not the developer side) and approve API authentication.
 
 ## Heroku Deployment Process
 ### Heroku Deployment Item #1 - Hide credentials in the environment variables (aka config variables)
 - If you are not using heroku for deployment, you can use load_dotenv() to hide your credentials.
-- Heroku doesn't allow dotenv for some reason. Thankfully, they proide native config variables.
+- Note: Heroku doesn't allow dotenv() for some reason. Thankfully, Heroku proide native config variables.
 -- Config Variables in Heroku
         - Created config variables --> Heroku --> App --> Settings --> Config Variables
     To access config variables in Python app file
