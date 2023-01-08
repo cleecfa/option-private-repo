@@ -47,7 +47,7 @@ In my net gamma exposure analysis, I assume that MMs are on negative gamma for p
 - CHROMEDRIVER_PATH = /app/.chromedriver/bin/chromedriver
 - GOOGLE_CHROME_BIN = /app/.apt/usr/bin/google-chrome
 - Need to build a custom webdriver for proper deployment
-'''
+```
 chrome_options = webdriver.ChromeOptions()
 chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
 chrome_options.add_argument("--headless")
@@ -62,7 +62,7 @@ except FileNotFoundError:
     with driver:
         c = auth.client_from_login_flow(
             driver, api_key, redirect_uri, token_path)
-'''
+```
 
 
 Callback URL Set up for TD Developers 
