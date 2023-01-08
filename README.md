@@ -82,7 +82,6 @@ except FileNotFoundError:
             driver, api_key, redirect_uri, token_path)
 ```
 
-
 ### Heroku Deployment Item #3 - Callback URL Set up for TD Developers 
 - Navigate to TD Developers, then your app.
 - I set the callback url to: 	https://option-app-v1.herokuapp.com/
@@ -91,7 +90,7 @@ except FileNotFoundError:
 - Added the following configuration string to the Procfile 
 ```web: sh setup.sh && streamlit run --server.port $PORT app.py```
 
-### Heroku Deployment Item #5 - Set up setup.sh   
+### Heroku Deployment Item #5 - Set up setup.sh for Streamlit configuration   
 - Add below to the setup.sh which will make the dark theme as default 
 ```mkdir -p ~/.streamlit/
 echo "[server]"  > ~/.streamlit/config.toml
