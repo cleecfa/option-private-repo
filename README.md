@@ -95,3 +95,7 @@ echo "enableCORS = false"  >> ~/.streamlit/config.toml
 echo "[theme]
 base = 'dark'" >> ~/.streamlit/config.toml```
 
+### Heroku Deployment Item #6 - Create requirements.txt   
+- Use pip freeze to create a text file for a list of all Python packages.
+- In the terminal, type below:
+```pip freeze >requirements.txt```
