@@ -99,3 +99,4 @@ base = 'dark'" >> ~/.streamlit/config.toml```
 - Use pip freeze to create a text file for a list of all Python packages.
 - In the terminal, type below:
 ```pip freeze >requirements.txt```
+
