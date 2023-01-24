@@ -112,3 +112,19 @@ base = 'dark'" >> ~/.streamlit/config.toml
 pip freeze >requirements.txt
 ```
 
+### How to login to Heroku
+1. Open a terminal and cd to the corresponding git remote directory.
+2. Then run heroku login.
+```
+heroku login
+```
+3. You will be prompted to the heroku website where you can login.
+
+### How to push Git
+1. git add .
+2. git commit -m "example: updated XYZ"
+3. git push heroku main
+
+
+
+
