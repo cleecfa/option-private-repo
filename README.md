@@ -121,10 +121,15 @@ heroku login
 3. You will be prompted to the heroku website where you can login.
 
 ### How to push Git
-1. git add .
-2. git commit -m "example: updated XYZ"
-3. git push heroku main
-
+```
+git add .
+```
+```
+git commit -m "example: updated XYZ"
+```
+```
+git push heroku main
+```
 
 
 
