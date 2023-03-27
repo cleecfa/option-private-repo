@@ -120,7 +120,7 @@ heroku login
 ```
 3. You will be prompted to the heroku website where you can login.
 
-### How to push Git
+### Heroku Git
 ```
 git add .
 ```
