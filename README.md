@@ -131,5 +131,8 @@ git commit -m "example: updated XYZ"
 git push heroku main
 ```
 
+### How to refresh token (TD requires this every 3 mo)
+https://www.notion.so/Option-Analytics-App-Refresh-Token-9bfb866c79f24459bb023f52a6cb0f7b?pvs=4
+
 
 
