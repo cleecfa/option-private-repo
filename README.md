@@ -1,5 +1,5 @@
 # Application url
-https://option-app-v1.herokuapp.com/
+https://mikookoption-f8b03860d108.herokuapp.com/
 
 # Description
 This is a real-time web application that pulls options quotes, greeks and underlying asset info based on user parameters (i.e. ticker, expiration dates, type of market activity such as volume or open interest) and analyzes the options market from a data-driven perspective. The app populates three major analyses: 1) market maker (MM)'s expected gamma exposure 2) market delta 3) real-time put-to-call ratio for user-chosen ticker out of more than 5000 US-listed equities or ETFs. The app has been built with Streamlit and deployed on the Heroku server.
@@ -128,10 +128,10 @@ git add .
 git commit -m "example: updated XYZ"
 ```
 ```
-git push heroku main
+git push heroku master
 ```
 
-### How to refresh token (TD requires this every 3 mo)
+### How to refresh token (Schwab requires this every week)
 https://www.notion.so/Option-Analytics-App-Refresh-Token-9bfb866c79f24459bb023f52a6cb0f7b?pvs=4
 
 
